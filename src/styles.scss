@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/ag-grid-community/src/styles/ag-grid.scss";
+@import "../node_modules//ag-grid-community/src/styles/ag-theme-alpine/sass/_ag-theme-alpine-mixin.scss";
+
+.ag-theme-alpine {
+    @include ag-theme-alpine();
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial';
+}
+
+.left, .right {
+    float:left;
+    width: calc(50% - 6em);
+    padding: 3em;
+}
+
+// input[type="text"] {
+//     width: 50%;
+//     padding: 5px;
+//     margin-bottom: 10px;
+// }

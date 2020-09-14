@@ -1,0 +1,8 @@
+<div  class="p-5 col-12" *ngIf="tutorials">
+
+  <button class="btn btn-primary mb-3" (click)="onDeleteRow()">Delete Row</button>
+
+  <ag-grid-angular #agGrid style="width: 700px; height: 500px;" class="ag-theme-alpine" [rowData]="tutorials | async"
+    [columnDefs]="columnDefs" rowSelection="multiple" (rowClicked)="onRowClick($event)">
+  </ag-grid-angular>
+</div>
